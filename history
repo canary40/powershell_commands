@@ -1,0 +1,16 @@
+Hi, there it is how to delete PowerShell history: 
+
+Clear-History
+
+Remove-Item $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
+
+If you want to suspend command history: 
+
+Remove-Module PSReadLine
+
+
+Finally, if you want to restore command history:
+
+Import-Module PSReadLine
+
